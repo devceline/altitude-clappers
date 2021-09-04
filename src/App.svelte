@@ -83,7 +83,7 @@
   </div>
   <div class="TodaysClapper">
     <div>
-      <h1>Today's clapper</h1>
+      <h1>Today's Clap Announcer</h1>
       <div
         on:click={handleTodaysClapperClicked}
         class="ClappersGird__clapper TodaysClapper__clapper TodaysClapper__clapper--{clappersTrueState[
@@ -167,6 +167,14 @@
     animation-delay: 0;
   }
 
+  .TodaysClapper__clapper--clapped::after {
+    content: "👏👏";
+    animation-name: clap;
+    animation-duration: 0.2s;
+    animation-iteration-count: 30;
+    animation-delay: 0;
+  }
+
   .ClappersGrid__clapper--clapped {
     background-color: #008eed;
     color: #e6eaee;
@@ -183,6 +191,15 @@
     }
     to {
       transform: rotate(360deg);
+    }
+  }
+
+  @keyframes clap {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100;
     }
   }
 </style>
