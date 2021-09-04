@@ -107,7 +107,8 @@
   }
 
   main {
-    margin: 1em auto;
+    margin: 2em auto;
+    margin-bottom: 3em;
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -118,6 +119,7 @@
     max-height: 100vh;
     gap: 1em;
     max-width: 15vw;
+    margin-bottom: 1em;
   }
 
   .ClappersGrid__clapper {
@@ -131,6 +133,7 @@
     box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.050980392156862744);
     border-radius: 6px;
     min-width: 4em;
+    min-height: 3em;
     word-wrap: break-word;
     transition: all 0.2s ease-in;
   }
