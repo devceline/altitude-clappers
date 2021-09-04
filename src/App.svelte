@@ -45,6 +45,11 @@
     localStorage.setItem(clappersStorageKey, JSON.stringify(clappersTrueState));
   };
 
+  const handleChangeTodaysClapper = (event) => {
+    const clapper = event.target.innerText;
+    if (!clappersTrueState[clapper]) todaysClapper = clapper;
+  };
+
   onMount(() => {
     console.log("hey");
     if (
@@ -65,6 +70,7 @@
   <div class="ClappersGrid">
     {#each Object.entries(clappersTrueState) as [clapper, clapperClapped] (clapper)}
       <div
+        on:click={handleChangeTodaysClapper}
         class="ClappersGrid__clapper ClappersGrid__clapper--{clapperClapped
           ? 'clapped'
           : 'unclapped'}"
@@ -116,6 +122,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
     text-align: center;
     align-items: center;
     font-weight: 700;
@@ -123,6 +130,11 @@
     border-radius: 6px;
     min-width: 4em;
     word-wrap: break-word;
+    transition: all 0.2s ease-in;
+  }
+
+  .ClappersGrid__clapper:hover {
+    outline: #008eed 1px solid;
   }
 
   .TodaysClapper {
