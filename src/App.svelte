@@ -22,6 +22,8 @@
     "Joseph",
     "Mike",
     "Amir",
+    "Lucas",
+    "Vlad",
     "Lulu",
   ];
 
