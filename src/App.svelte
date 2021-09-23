@@ -24,7 +24,8 @@
     "Amir",
     "Lucas",
     "Vlad",
-    "Lulu",
+    "Ilche",
+    "Michael",
   ];
 
   const clappersData = JSON.parse(
