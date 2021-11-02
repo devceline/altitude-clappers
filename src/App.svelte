@@ -18,13 +18,10 @@
     "Pablo",
     "Shreemathi",
     "Ashwini",
-    "Nyah",
-    "Joseph",
     "Mike",
     "Amir",
     "Lucas",
     "Vlad",
-    "Ilche",
     "Michael",
   ];
 
