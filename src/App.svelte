@@ -51,7 +51,6 @@
   };
 
   onMount(() => {
-    console.log("hey");
     if (
       Object.entries(clappersTrueState).filter(
         ([, clapped]) => clapped === false
@@ -66,7 +65,7 @@
   });
 </script>
 
-<main>
+<main class={clappersTrueState[todaysClapper] && "MainClapping"}>
   <div class="ClappersGrid">
     {#each Object.entries(clappersTrueState) as [clapper, clapperClapped] (clapper)}
       <div
