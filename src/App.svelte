@@ -19,10 +19,8 @@
     "Shreemathi",
     "Ashwini",
     "Mike",
-    "Amir",
     "Lucas",
     "Vlad",
-    "Michael",
   ];
 
   const clappersData = JSON.parse(
