@@ -14,7 +14,7 @@
   export let clappers = [
     "Julian",
     "Sheva",
-    "Shaheen",
+    "Celine",
     "Pablo",
     "Shreemathi",
     "Ashwini",
@@ -157,8 +157,8 @@
     background-color: #008eed;
     color: #e6eaee;
     animation-name: hellaSpinning;
-    animation-duration: 0.5s;
-    animation-iteration-count: 3;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
     animation-delay: 0;
   }
 
@@ -181,11 +181,22 @@
   }
 
   @keyframes hellaSpinning {
-    from {
-      transform: rotate(0deg);
+    0% {
+      transform: rotate(0deg) translateX(50%);
+      background-color: red;
     }
-    to {
-      transform: rotate(360deg);
+    25% {
+      transform: rotate(180deg) translateX(20%);
+    }
+    50% {
+      transform: rotate(360deg) translateX(-50%);
+    }
+    75% {
+      transform: rotate(360deg) translateX(-100%);
+    }
+    100% {
+      transform: rotate(0deg) translateX(50%);
+      background-color: #008eed;
     }
   }
 
